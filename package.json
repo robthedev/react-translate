@@ -1,6 +1,6 @@
 {
   "name": "reacti18n-translate",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A wrapper for your react application that simplifies internationalization.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -20,18 +20,14 @@
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server"
   },
-  "dependencies": {
-    "axios": "^0.18.1",
-    "cryptiles": "^4.1.2"
-  },
+  "dependencies": {},
   "peerDependencies": {
     "react": "16.x"
   },
   "devDependencies": {
     "nwb": "0.23.x",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "reacti18n-translate": "^1.0.1"
+    "react-dom": "^16.12.0"
   },
   "author": "RobWillCode",
   "homepage": "https://github.com/robthedev/react-translate#readme",
