@@ -12,13 +12,10 @@ export const ReactTranslateProvider = ({
   const getTranslateCode = languageCode => key => {
     const languagekey = translations[languageCode];
     const [...keys] = key.split(".");
-    // console.log([...keys]);
     switch ([...keys].length) {
       case 3:
-        console.info(languagekey[keys[0]][keys[1]][keys[2]], [keys[2]]);
         return languagekey[keys[0]][keys[1]][keys[2]];
       case 2:
-        // console.log(languagekey[keys[0]][keys[1]]);
         return languagekey[keys[0]][keys[1]];
       default:
         return languagekey[key] || key;

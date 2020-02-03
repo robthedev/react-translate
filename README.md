@@ -1,10 +1,10 @@
-# React-Translate
+# react-translate
 
 [![Travis][build-badge]][build]
 [![npm package][npm-badge]][npm]
+
 [build-badge]: https://travis-ci.org/robthedev/react-translate.svg?branch=master
 [build]: https://travis-ci.org/robthedev/react-translate
-
 [npm-badge]: https://img.shields.io/npm/v/react-notepad.png?style=flat-square
 [npm]: https://www.npmjs.com/package/react-notepad
 [coveralls-badge]: https://coveralls.io/github/robthedev/react-translate/badge.svg?branch=master
