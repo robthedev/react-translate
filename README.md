@@ -7,8 +7,8 @@
 
 [npm-badge]: https://img.shields.io/npm/v/react-notepad.png?style=flat-square
 [npm]: https://www.npmjs.com/package/react-notepad
-[coveralls-badge]: https://coveralls.io/repos/github/robthedev/react-notepad/badge.svg?branch=master
-[coveralls]: https://coveralls.io/github/robthedev/react-notepad?branch=master
+[coveralls-badge]: https://coveralls.io/github/robthedev/react-translate/badge.svg?branch=master
+[coveralls]: https://coveralls.io/github/robthedev/react-translate?branch=master
 
 # React-Translate is a wrapper for your react application that simplifies internationalization.
 
