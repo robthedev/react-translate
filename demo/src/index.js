@@ -1,15 +1,15 @@
-import React, {Component} from 'react'
-import {render} from 'react-dom'
+import React from "react";
+import ReactDOM from "react-dom";
 
-import Example from '../../src'
+import App from "./App";
 
-class Demo extends Component {
-  render() {
-    return <div>
-      <h1>react-translate Demo</h1>
-      <Example/>
-    </div>
-  }
-}
+import { ReactTranslateProvider } from "../../src";
+import translations from "./i18n";
 
-render(<Demo/>, document.querySelector('#demo'))
+const Demo = () => (
+  <ReactTranslateProvider translations={translations} defaultLanguage="en">
+    <App />
+  </ReactTranslateProvider>
+);
+
+ReactDOM.render(<Demo />, document.querySelector("#demo"));

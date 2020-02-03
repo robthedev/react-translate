@@ -1,23 +1,36 @@
-import expect from 'expect'
-import React from 'react'
-import {render, unmountComponentAtNode} from 'react-dom'
+import expect from "expect";
+import React, { useContext } from "react";
+import { render, unmountComponentAtNode } from "react-dom";
 
-import Component from 'src/'
+import { ReactTranslateProvider, ReactTranslateContext } from "src/";
 
-describe('Component', () => {
-  let node
+const TestApp = () => {
+  const { translate, dispatch } = useContext(ReactTranslateContext);
+  return (
+    <div>
+      <p></p>
+      <button>EN</button>
+      <button>ES</button>
+    </div>
+  );
+};
+
+const Index = () => (
+  <ReactTranslateProvider translations={translations} defaultLanguage="en">
+    <TestApp />
+  </ReactTranslateProvider>
+);
+
+describe("TestApp", () => {
+  let node;
 
   beforeEach(() => {
-    node = document.createElement('div')
-  })
+    node = document.createElement("div");
+  });
 
   afterEach(() => {
-    unmountComponentAtNode(node)
-  })
+    unmountComponentAtNode(node);
+  });
 
-  it('displays a welcome message', () => {
-    render(<Component/>, node, () => {
-      expect(node.innerHTML).toContain('Welcome to React components')
-    })
-  })
-})
+  it("", () => {});
+});

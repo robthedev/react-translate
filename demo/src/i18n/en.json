@@ -1,0 +1,9 @@
+{
+  "test": "TEST",
+  "common": {
+    "nested": {
+      "test": "Nested common object TEST"
+    },
+    "test": "Nested object TEST"
+  }
+}
