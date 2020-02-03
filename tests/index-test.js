@@ -1,36 +1,11 @@
 import expect from "expect";
-import React, { useContext } from "react";
+import React from "react";
 import { render, unmountComponentAtNode } from "react-dom";
 
-import { ReactTranslateProvider, ReactTranslateContext } from "src/";
+import Component from "src/";
 
-const TestApp = () => {
-  const { translate, dispatch } = useContext(ReactTranslateContext);
-  return (
-    <div>
-      <p></p>
-      <button>EN</button>
-      <button>ES</button>
-    </div>
-  );
-};
-
-const Index = () => (
-  <ReactTranslateProvider translations={translations} defaultLanguage="en">
-    <TestApp />
-  </ReactTranslateProvider>
-);
-
-describe("TestApp", () => {
-  let node;
-
-  beforeEach(() => {
-    node = document.createElement("div");
+describe("Minimal unit test", () => {
+  it("informs the reader", () => {
+    expect("test").toEqual("test");
   });
-
-  afterEach(() => {
-    unmountComponentAtNode(node);
-  });
-
-  it("", () => {});
 });
