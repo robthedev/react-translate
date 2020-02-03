@@ -1,6 +1,6 @@
 {
   "name": "reacti18n-translate",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "A wrapper for your react application that simplifies internationalization.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -32,7 +32,7 @@
   "author": "RobWillCode",
   "homepage": "https://github.com/robthedev/react-translate#readme",
   "license": "MIT",
-  "repository": "https://github.com/robthedev/react-translate",
+  "repository": "",
   "keywords": [
     "react-component",
     "react",

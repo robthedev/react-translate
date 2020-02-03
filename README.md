@@ -1,16 +1,16 @@
-# react-i18n
+# reacti18n-translate
 
 [![Travis][build-badge]][build]
 [![npm package][npm-badge]][npm]
 
 [build-badge]: https://travis-ci.org/robthedev/react-translate.svg?branch=master
 [build]: https://travis-ci.org/robthedev/react-translate
-[npm-badge]: https://img.shields.io/npm/v/react-notepad.png?style=flat-square
-[npm]: https://www.npmjs.com/package/react-notepad
+[npm-badge]: https://img.shields.io/npm/v/reacti18n-translate.png?style=flat-square
+[npm]: https://www.npmjs.com/package/reacti18n-translate
 [coveralls-badge]: https://coveralls.io/github/robthedev/react-translate/badge.svg?branch=master
 [coveralls]: https://coveralls.io/github/robthedev/react-translate?branch=master
 
-# react-i18n is a wrapper for your react application that simplifies internationalization.
+# reacti18n-translate is a wrapper for your react application that simplifies internationalization.
 
 ### Follow the step-by-step instructions below:
 
@@ -84,7 +84,8 @@ import { Reacti18nContext } from "reacti18n-translate";
 const ExampleComponent = () => {
     const { dispatch } = useContext(Reacti18nContext);
 
-    const handleLanguageChange = e => dispatch({ type: "setLanguage", payload: e.target.value });
+    const handleLanguageChange = e =>
+          dispatch({ type: "setLanguage", payload: e.target.value });
 
     return (
         // Example using a select
