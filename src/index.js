@@ -1,8 +1,8 @@
 import React, { createContext, useReducer } from "react";
 
-export const ReactTranslateContext = createContext();
+export const Reacti18nContext = createContext();
 
-export const ReactTranslateProvider = ({
+export const Reacti18nProvider = ({
   children,
   translations,
   defaultLanguage
@@ -43,8 +43,8 @@ export const ReactTranslateProvider = ({
   const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
-    <ReactTranslateContext.Provider value={{ ...state, dispatch }}>
+    <Reacti18nContext.Provider value={{ ...state, dispatch }}>
       {children}
-    </ReactTranslateContext.Provider>
+    </Reacti18nContext.Provider>
   );
 };

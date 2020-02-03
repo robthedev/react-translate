@@ -1,6 +1,6 @@
 {
-  "name": "react-translate",
-  "version": "1.0.0",
+  "name": "reacti18n-translate",
+  "version": "1.0.1",
   "description": "A wrapper for your react application that simplifies internationalization",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -45,6 +45,9 @@
     "i18n",
     "language",
     "internationalization",
-    "localization"
+    "localization",
+    "globalization",
+    "intl",
+    "locale"
   ]
 }

@@ -1,4 +1,4 @@
-# react-translate
+# react-i18n
 
 [![Travis][build-badge]][build]
 [![npm package][npm-badge]][npm]
@@ -10,7 +10,7 @@
 [coveralls-badge]: https://coveralls.io/github/robthedev/react-translate/badge.svg?branch=master
 [coveralls]: https://coveralls.io/github/robthedev/react-translate?branch=master
 
-# React-Translate is a wrapper for your react application that simplifies internationalization.
+# react-i18n is a wrapper for your react application that simplifies internationalization.
 
 ### Follow the step-by-step instructions below:
 
@@ -38,14 +38,15 @@
    ```javascript
    // In your application file
    import React from "react";
+   import { Reacti18nProvider } from "reacti18n-translate";
    import translations from "./i18n";
 
-   <ReactTranslateProvider translations={translations} defaultLanguage="en">
+   <Reacti18nProvider translations={translations} defaultLanguage="en">
      <App />
-   </ReactTranslateProvider>;
+   </Reacti18nProvider>;
    ```
 
-2. React-Translate provides a **translate** function to use when translating content. Pass in a string that represents the key from your translation file. Current support is for objects with a maximum depth level of 3.
+2. react-i18n provides a **translate** function to use when translating content. Pass in a string that represents the key from your translation file. Current support is for objects with a maximum depth level of 3.
 
 ```json
 // In your translation file en.json
@@ -60,10 +61,10 @@
 ```javascript
 // In your component file
 import React, { useContext } from "react";
-import { ReactTranslateContext } from "react-tranlate";
+import { Reacti18nContext } from "reacti18n-translate";
 
 const ExampleComponent = () => {
-    const { translate } = useContext(ReactTranslateContext);
+    const { translate } = useContext(Reacti18nContext);
     return (
         <div>
             <p>Translated content: {translate('example')}</p>
@@ -74,13 +75,14 @@ const ExampleComponent = () => {
 ...
 ```
 
-3. React-Translate also provides a **dispatch** function to set the language you want to use. It accepts a type _'setLanguage'_, and a payload which represents the desired language code.
+3. react-i18n also provides a **dispatch** function to set the language you want to use. It accepts a type _'setLanguage'_, and a payload which represents the desired language code.
 
 ```javascript
 // In your component file
 import React, { useContext } from "react";
+import { Reacti18nContext } from "reacti18n-translate";
 const ExampleComponent = () => {
-    const { dispatch } = useContext(ReactTranslateContext);
+    const { dispatch } = useContext(Reacti18nContext);
 
     const handleLanguageChange = e => dispatch({ type: "setLanguage", payload: e.target.value });
 

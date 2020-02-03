@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import "./App.css";
 
-import { ReactTranslateContext } from "../../src";
+import { Reacti18nContext } from "../../src";
 
 const App = () => {
-  const { translate, dispatch } = useContext(ReactTranslateContext);
+  const { translate, dispatch } = useContext(Reacti18nContext);
   return (
     <div className="wrapper">
       <h1>
