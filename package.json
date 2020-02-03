@@ -1,7 +1,7 @@
 {
   "name": "react-translate",
   "version": "1.0.0",
-  "description": "A i18n wrapper for your react application. ",
+  "description": "A wrapper for your react application that simplifies internationalization",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -29,14 +29,19 @@
     "react-dom": "^16.12.0"
   },
   "author": "robthedev",
-  "homepage": "",
+  "homepage": "https://github.com/robthedev/react-translate#readme",
   "license": "MIT",
-  "repository": "",
+  "repository": "https://github.com/robthedev/react-translate",
   "keywords": [
     "react-component",
+    "react",
+    "hooks",
+    "context",
     "translate",
     "translation",
     "i18n",
-    "language"
+    "language",
+    "internationalization",
+    "localization"
   ]
 }
