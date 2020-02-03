@@ -1,4 +1,4 @@
-# reacti18n-translate
+# Reacti18n-translate
 
 [![Travis][build-badge]][build]
 [![npm package][npm-badge]][npm]
@@ -10,43 +10,57 @@
 [coveralls-badge]: https://coveralls.io/github/robthedev/react-translate/badge.svg?branch=master
 [coveralls]: https://coveralls.io/github/robthedev/react-translate?branch=master
 
-# reacti18n-translate is a wrapper for your react application that simplifies internationalization.
+# Reacti18n-translate is a wrapper for your react application that simplifies internationalization.
 
-### Follow the step-by-step instructions below:
+## Follow the step-by-step instructions below:
 
-1. Create a directory for your translations (it's common practice to name this directory i18n)
+### Install
 
-   1. Create a .json file for each supported lanuage ( i.e. en.json, en-US.json).
-   2. Create an index.js file inside this directory to export your supported languages as a JavaScript object.
+```bash
+npm i reacti18n-translate
+# or
+yarn add reacti18n-translate
+```
 
-   ```javascript
-   // index.js file
-   import EN from "./en.json";
-   import ES from "./es.json";
-   import DE from "./de.json";
+### CDN
 
-   const translations = {
-     en: EN,
-     es: ES,
-     de: DE
-   };
-   export default translations;
-   ```
+```javascript
+<script src="https://unpkg.com/reacti18n-translate/umd/reacti18n-translate.js"></script>
+```
 
-   3. Wrap your appliction with **ReactTranslateProvider**, while also providing a default language, and your translations. The defaultLanguage prop is optional, 'en' will be used if defaultLanguage is not provided.
+In your src directory, create another directory for your translations (it's common practice to name this directory i18n)
 
-   ```javascript
-   // In your application file
-   import React from "react";
-   import { Reacti18nProvider } from "reacti18n-translate";
-   import translations from "./i18n";
+1.  Create a .json file for each supported lanuage ( i.e. en.json, es.json).
+2.  Create an index.js file inside this directory to export your supported languages as a JavaScript object.
 
-   <Reacti18nProvider translations={translations} defaultLanguage="en">
-     <App />
-   </Reacti18nProvider>;
-   ```
+```javascript
+// index.js file
+import EN from "./en.json";
+import ES from "./es.json";
+import DE from "./de.json";
 
-2. react-i18n provides a **translate** function to use when translating content. Pass in a string that represents the key from your translation file. Current support is for objects with a maximum depth level of 3.
+const translations = {
+  en: EN,
+  es: ES,
+  de: DE
+};
+export default translations;
+```
+
+Wrap your appliction with **Reacti18nProvider**, while also providing a default language, and your translations. The defaultLanguage prop is optional, 'en' will be used if defaultLanguage is not provided.
+
+```javascript
+// In your application file
+import React from "react";
+import { Reacti18nProvider } from "reacti18n-translate";
+import translations from "./i18n";
+
+<Reacti18nProvider translations={translations} defaultLanguage="en">
+  <App />
+</Reacti18nProvider>;
+```
+
+React-i18n provides a **translate** function to use when translating content. Pass in a string that represents the key from your translation file. Current support is for objects with a maximum depth level of 3.
 
 ```json
 // In your translation file en.json
@@ -75,7 +89,7 @@ const ExampleComponent = () => {
 ...
 ```
 
-3. react-i18n also provides a **dispatch** function to set the language you want to use. It accepts a type _'setLanguage'_, and a payload which represents the desired language code.
+React-i18n also provides a **dispatch** function to set the language you want to use. It accepts a type _'setLanguage'_, and a payload which represents the desired language code.
 
 ```javascript
 // In your component file
@@ -104,4 +118,4 @@ const ExampleComponent = () => {
 ...
 ```
 
-4. Congratulations! Your react application is now internationalized. :sweat_smile:
+Congratulations! Your react application is now internationalized. :sweat_smile:
