@@ -1,7 +1,7 @@
 {
   "name": "reacti18n-translate",
   "version": "1.0.1",
-  "description": "A wrapper for your react application that simplifies internationalization",
+  "description": "A wrapper for your react application that simplifies internationalization.",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
