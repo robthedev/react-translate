@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/reacti18n/static/css/main.4b099052.chunk.css",
+    "main.js": "/reacti18n/static/js/main.53ca3006.chunk.js",
+    "main.js.map": "/reacti18n/static/js/main.53ca3006.chunk.js.map",
+    "runtime-main.js": "/reacti18n/static/js/runtime-main.ac71d5c8.js",
+    "runtime-main.js.map": "/reacti18n/static/js/runtime-main.ac71d5c8.js.map",
+    "static/js/2.cd750850.chunk.js": "/reacti18n/static/js/2.cd750850.chunk.js",
+    "static/js/2.cd750850.chunk.js.map": "/reacti18n/static/js/2.cd750850.chunk.js.map",
+    "index.html": "/reacti18n/index.html",
+    "precache-manifest.cfa5d8d05458daaabcd2e8110a96a3f5.js": "/reacti18n/precache-manifest.cfa5d8d05458daaabcd2e8110a96a3f5.js",
+    "service-worker.js": "/reacti18n/service-worker.js",
+    "static/css/main.4b099052.chunk.css.map": "/reacti18n/static/css/main.4b099052.chunk.css.map",
+    "static/js/2.cd750850.chunk.js.LICENSE.txt": "/reacti18n/static/js/2.cd750850.chunk.js.LICENSE.txt",
+    "static/media/323310.svg": "/reacti18n/static/media/323310.38f88714.svg",
+    "static/media/323365.svg": "/reacti18n/static/media/323365.7b6d1881.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ac71d5c8.js",
+    "static/js/2.cd750850.chunk.js",
+    "static/css/main.4b099052.chunk.css",
+    "static/js/main.53ca3006.chunk.js"
+  ]
+}
