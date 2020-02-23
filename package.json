@@ -26,8 +26,8 @@
   "jsnext:main": "dist/index.es.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "test": "cross-env CI=1 react-scripts test --env=jsdom",
-    "test:watch": "react-scripts test --env=jsdom",
+    "test": "cross-env CI=1 react-scripts test",
+    "test:watch": "react-scripts test",
     "build": "rollup -c",
     "start": "rollup -c -w",
     "prepare": "npm run build",
