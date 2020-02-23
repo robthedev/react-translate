@@ -1,0 +1,10 @@
+{
+  "example": "example",
+  "learn_more": "Learn More",
+  "short_desc": "I can give you some examples of methods that have worked for me.",
+  "common": {
+    "form": {
+      "submit": "Submit"
+    }
+  }
+}
